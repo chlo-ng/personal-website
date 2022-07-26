@@ -1,13 +1,116 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --font-primary: "Lato", sans-serif;
+  --font-secondary: "Playfair Display", serif;
+  
+
+  --color-bg: #d1b3c4;
+  --color-bg-variant: #b392ac;
+  --color-primary: #735d78;
+  --color-primary-variant: #e8c2ca;
+  --color-secondary: #f7d1cd;
+  --color-highlight: beige;
+  --color-emphasis: #2c0735;
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body > div {
+  background-color: var(--color-bg-variant);
+  line-height: 1.7rem;
+}
+
+/* GENERAL STYLES */
+.container {
+  width: var(--container-width-lg);
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  color: var(--color-emphasis);
+}
+
+section {
+  margin: 8rem;
+}
+
+a {
+  color: var(--color-primary-variant);
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-highlight);
+}
+
+.button {
+  font-family: var(--font-primary);
+  font-size: 0.93rem;
+  width: max-content;
+  display: inline-block;
+  background-color: var(--color-primary-variant);
+  color: var(--color-emphasis);
+  padding: 0.7rem 0.8rem;
+  margin: .2em;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.button:hover {
+  color: var(--color-highlight);
+  background-color: var(--color-bg);
+  border-color: transparent;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  section {
+    margin-top: 2rem;
+  }
 }
