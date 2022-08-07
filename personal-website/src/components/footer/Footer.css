@@ -1,0 +1,28 @@
+#footer {
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--footer);
+}
+
+.credentials {
+    font-family: var(--font-mono);
+    font-size: var(--font-xs);
+    text-decoration: none;
+    color: var(--neon-pink);
+}
+
+.credentials:hover {
+    color: var(--neon-pink);
+}
+
+#footer h5 {
+    font-family: var(--font-sans-serif);
+    font-size: var(--font-xs);
+    color: var(--gray);
+}
+
+
+

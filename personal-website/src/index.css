@@ -9,17 +9,28 @@
 }
 
 :root {
-  --font-primary: "Lato", sans-serif;
-  --font-secondary: "Playfair Display", serif;
+  --font-sans-serif: "Padauk", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-mono: "Fira Mono", monospace;
   
 
-  --color-bg: #d1b3c4;
-  --color-bg-variant: #b392ac;
-  --color-primary: #735d78;
-  --color-primary-variant: #e8c2ca;
-  --color-secondary: #f7d1cd;
-  --color-highlight: beige;
-  --color-emphasis: #2c0735;
+  --background: #0d0629;
+  --footer: #0a0619;
+  --white: #ffffff;
+  --neon-pink: #e82d7f;
+  --light-pink: #eebbf8;
+  --purple: #7c4bb1;
+
+  --dark-gray: #3d3f54;
+  --gray: #797986;
+  --light-gray: #bcbcc2;
+  --lighter-gray: #f4f6ff;
+  
+  --font-xl: 5.5rem;
+  --font-lg: 4rem;
+  --font-md: 1.5rem;
+  --font-sm: 1.2rem;
+  --font-xs: 1rem;
 
   --transition: all 400ms ease;
 
@@ -37,8 +48,8 @@ html {
 }
 
 body > div {
-  background-color: var(--color-bg-variant);
   line-height: 1.7rem;
+  background-color: var(--background);
 }
 
 /* GENERAL STYLES */
@@ -47,9 +58,34 @@ body > div {
   margin: 0;
 }
 
+
 h1 {
-  font-size: 2rem;
-  color: var(--color-emphasis);
+  font-family: var(--font-sans-serif);
+  color: var(--lighter-gray);
+  font-size: var(--font-xl);
+}
+
+h2 {
+  font-family: var(--font-mono);
+  font-size: var(--font-md);
+  color: var(--neon-pink);
+}
+
+h3 {
+  font-family: var(--font-mono);
+  font-size: var(--font-md);
+  color: var(--neon-pink);
+}
+
+p {
+  font-family: var(--font-sans-serif);
+  color: var(--light-gray);
+  font-size: var(--font-sm);
+}
+
+b {
+  font-weight: normal;
+  color: var(--purple);
 }
 
 section {
@@ -57,33 +93,36 @@ section {
 }
 
 a {
-  color: var(--color-primary-variant);
+  color: var(--light-gray);
   transition: var(--transition);
   text-decoration: none;
 }
 
 a:hover {
-  color: var(--color-highlight);
+  color: var(--purple);
 }
 
 .button {
   font-family: var(--font-primary);
   font-size: 0.93rem;
-  width: max-content;
+  width: 10rem;
   display: inline-block;
-  background-color: var(--color-primary-variant);
-  color: var(--color-emphasis);
-  padding: 0.7rem 0.8rem;
-  margin: .2em;
-  border-radius: 0.6rem;
+
   cursor: pointer;
   transition: var(--transition);
   text-decoration: none;
+
+  background-color: var(--color-primary);
+  color: var(--color-highlight);
+
+  padding: 0.7rem 0.8rem;
+  margin: .2em;
+  border-radius: 0.6rem;
+  
 }
 
 .button:hover {
-  color: var(--color-highlight);
-  background-color: var(--color-bg);
+  background-color: var(--color-primary-variant);
   border-color: transparent;
 }
 
@@ -114,3 +153,5 @@ img {
     margin-top: 2rem;
   }
 }
+
+

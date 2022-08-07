@@ -1,0 +1,20 @@
+#projects {
+    height: 100vh;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects .container {
+    height: 80%;
+    width: 70%;
+}
+
+.project__container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}

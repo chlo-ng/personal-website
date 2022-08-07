@@ -1,16 +1,21 @@
-import Header from './components/Header';
-import Navbar from './components/Navbar';
-import About from './components/About';
+import Home from './components/home/Home';
+import Navbar from './components/navbar/Navbar';
+import About from './components/about/About';
+import Projects from './components/projects/Projects';
+import Misc from './components/miscellaneous/Misc';
+import Footer from './components/footer/Footer';
 import './index.css';
 
 function App() {
   return (
     
     <div>
-      <Header />
       <Navbar />
-
-      {/* <About /> */}
+      <Home />
+      <About />
+      <Projects />
+      <Misc />
+      <Footer />
 
       {/* <Router>
         <NavigationBar />
