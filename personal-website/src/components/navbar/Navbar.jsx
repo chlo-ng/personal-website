@@ -12,7 +12,7 @@ function Navbar() {
                 <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ''}> About </a>
                 <a href="#projects" onClick={() => setActiveNav('#projects')} className={activeNav === '#projects' ? 'active' : ''}> Projects </a>
                 <a href="#misc" onClick={() => setActiveNav('#misc')} className={activeNav === '#misc' ? 'active' : ''}> Misc. </a>
-                <a href={Resume} target='_blank'> Resume </a>
+                <a href={Resume} target='_blank' rel="noreferrer"> Resume </a>
             </nav>
         </header>
     );
