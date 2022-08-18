@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
     return(
         <div id="footer">
-            <a href='https://github.com/chlo-ng/personal-website' className='credentials'> Developed by Chloe Ng </a>
+            <a href='https://github.com/chlo-ng/personal-website' className='credentials' target='_blank' rel="noreferrer"> Developed by Chloe Ng </a>
             <h5> <i>Last Updated: August 2022</i> </h5>
         </div>
     );

@@ -9,9 +9,9 @@
 }
 
 :root {
-  --font-sans-serif: "Padauk", sans-serif;
+  --font-sans-serif: "Karla", sans-serif;
   --font-serif: "Playfair Display", serif;
-  --font-mono: "Fira Mono", monospace;
+  --font-mono: "Roboto Mono", monospace;
   
 
   --background: #0d0629;
@@ -26,11 +26,13 @@
   --light-gray: #bcbcc2;
   --lighter-gray: #f4f6ff;
   
-  --font-xl: 5.5rem;
-  --font-lg: 4rem;
-  --font-md: 1.5rem;
-  --font-sm: 1.2rem;
-  --font-xs: 1rem;
+  --font-xxl: 5.5rem;
+  --font-xl: 3rem;
+  --font-lg: 2rem;
+  --font-md: 1.3rem;
+  --font-sm: 1.1rem;
+  --font-xs: .8rem;
+  --font-xxs: .5rem;
 
   --transition: all 400ms ease;
 
@@ -68,13 +70,21 @@ h1 {
 h2 {
   font-family: var(--font-mono);
   font-size: var(--font-md);
-  color: var(--neon-pink);
+  color: var(--lighter-gray);
+  font-weight: 200;
 }
 
 h3 {
   font-family: var(--font-mono);
   font-size: var(--font-md);
   color: var(--neon-pink);
+}
+
+h4 {
+  font-family: var(--font-sans-serif);
+  font-size: var(--font-md);
+  color: var(--neon-pink);
+  font-weight: bolder;
 }
 
 p {
@@ -85,7 +95,7 @@ p {
 
 b {
   font-weight: normal;
-  color: var(--purple);
+  color: var(--neon-pink);
 }
 
 section {
@@ -102,34 +112,21 @@ a:hover {
   color: var(--purple);
 }
 
-.button {
-  font-family: var(--font-primary);
-  font-size: 0.93rem;
-  width: 10rem;
-  display: inline-block;
-
-  cursor: pointer;
-  transition: var(--transition);
-  text-decoration: none;
-
-  background-color: var(--color-primary);
-  color: var(--color-highlight);
-
-  padding: 0.7rem 0.8rem;
-  margin: .2em;
-  border-radius: 0.6rem;
-  
-}
-
-.button:hover {
-  background-color: var(--color-primary-variant);
-  border-color: transparent;
-}
-
 img {
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+ul {
+  list-style-type: disc;
+  padding: .5em;
+}
+
+li {
+  font-family: var(--font-mono);
+  font-size: var(--font-xs);
+  color: var(--light-gray);
 }
 
 /* MEDIA QUERIES (MEDIUM DEVICES) */

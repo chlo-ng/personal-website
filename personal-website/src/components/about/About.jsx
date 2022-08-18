@@ -11,12 +11,15 @@ function About() {
                     <p> Hello! My name is Chloe, and I first stumbled upon this field with the 
                         fascination that with just a few lines of code, we can create incredible things.
                     </p>
+                    <br />
                     <p> Although I am still in the middle of earning a Bachelor's degree, 
                         my journey so far has introduced me to many aspects of Computer Science. 
                         Some aspects that I have been interested in are  
                         <b> Human-Computer Interaction</b> and <b>User-Centered Design</b>.  
                     </p>
-                    <p> As of now, I would like to apply the skills I've learned 
+                    <br />
+                    <p> 
+                        As of now, I would like to apply the skills I've learned 
                         to products such as web development, creating games, and education.
                     </p>
                 </div>

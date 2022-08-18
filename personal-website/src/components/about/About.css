@@ -38,12 +38,6 @@
 
 }
 
-.skill__list {
-    color: var(--light-gray);
-    font-family: var(--font-sans-serif);
-    font-size: var(--font-md);
-}
-
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 
 @media screen and (max-width: 1024px) {
@@ -59,14 +53,15 @@
     .img__container {
         width: 70%;
         margin: auto;
+        justify-content: center;
     }
   }
   
   /* MEDIA QUERIES (SMALL DEVICES) */
   @media screen and (max-width: 600px) {
     .about {
-        height: 130vh;
-        overflow: hidden;
+        height: fit-content;
+        padding: 2em;
     }
 
     .about .container {
@@ -77,11 +72,21 @@
     .img__container {
         width: 70%;
         margin: auto;
+        justify-content: center;
     }
 
     .prof-pic {
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
+    }
+
+    h2 {
+        font-size: var(--font-sm);
+    }
+
+    .about__container p {
+        text-align: center;
+        font-size: var(--font-sm);
     }
 
   }
