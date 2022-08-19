@@ -6,12 +6,15 @@
     align-items: center;
     justify-content: center;
     gap: .5em;
+
+    /* padding: 5em; */
 }
 
 .about .container {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    gap: 50px;
+    grid-template-rows: minmax(50%, auto);
+    gap: 1em;
     width: 75vw;
 }
 
@@ -29,7 +32,9 @@
 
 .img__container {
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .prof-pic {

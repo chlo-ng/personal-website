@@ -1,22 +1,20 @@
 #projects {
     height: fit-content;
-    overflow: hidden;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 #projects .container {
-    top: 0;
-    
     height: 80%;
     width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 5em;
 }
 
 .project__container {
@@ -63,11 +61,11 @@
     color: var(--lighter-gray);
 }
 
-ul.projects__list li::before {
-    content: "⇢ ";
-    color: var(--neon-pink);
+ul.projects__list {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
     font-size: var(--font-xs);
-    line-height: 1em;
 }
 
 

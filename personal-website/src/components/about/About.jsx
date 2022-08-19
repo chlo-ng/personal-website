@@ -27,6 +27,15 @@ function About() {
                 <div className='img__container'> 
                     <img alt="creator" className="prof-pic" src={ProfPic}></img>
                 </div>
+
+                {/* <div className="about__container">
+                    <p> Here are some languages that I am confident in: </p>
+                    <ul>
+                        <li> React.js </li>
+                        <li> Java </li>
+                        <li> HTML/CSS </li>
+                    </ul>
+                </div> */}
             </div>
         </div>
     );

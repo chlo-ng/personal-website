@@ -23,7 +23,7 @@ function Navbar() {
     //Navbar Scrolls Up
     const [navBar, setNavbar] = useState(false);
     const scrollNav = () => {
-        if (window.scrollY  >= 100) {
+        if (window.scrollY  >= 180) {
             setNavbar(true);
         } else {
             setNavbar(false);

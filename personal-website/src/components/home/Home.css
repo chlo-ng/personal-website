@@ -24,6 +24,7 @@
 .home__container h1 {
     font-weight: bold;
     font-size: var(--font-xxl);
+    text-shadow: -2px 2px 10px var(--gray);
 }
 
 .home__container p {
