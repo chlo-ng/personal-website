@@ -4,8 +4,8 @@ import './Misc.css';
 function Misc() {
     return(
         <div id="misc">
-            <h2> Some Fun Facts </h2>
             <div className="container">
+                <h2> Some Fun Facts </h2>
                 <ul>
                     <li> I was born in the US, but lived a majority of my childhood in Indonesia. </li>
                     <li> I am an <b> INFJ-T, type 5w6</b>.</li>
